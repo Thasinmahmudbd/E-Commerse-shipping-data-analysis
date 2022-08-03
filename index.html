@@ -9,7 +9,7 @@
     <meta name="author" content="Your Name">
 
     <!-- Title -->
-    <title>Nasa Near Earth Object Hazard Analysis</title>
+    <title>E-Commerce Shipping Data Analysis</title>
 
     <!-- Style-->
     <link rel="stylesheet" href="style/index.css">
@@ -28,15 +28,16 @@
         <span><strong>Thasin Mahmud</strong></span>
         <div class="link">
             <a href="#dataCleaning">Data Cleaning</a>
-            <a href="#dashboard">Dashboard</a>
+            <a href="#eda">EDA</a>
+            <a href="#dashboard">Dashboards</a>
             <a href="#dataStory">Data Story</a>
         </div>
     </div>
 
     <div class="media">
-        <video width="100%" autoplay loop src="media/high.mp4" alt="Video space"></video>
-        <h1 class="h1"><span class="nasa">NASA </span> <br>Near Earth <br><span class="object">Object </span> <br><span class="hazard">Hazard Analysis</span></h1>
-        <h1 class="tabH1">NASA Near Earth Object Hazard Analysis</h1>
+        <video width="100%" autoplay loop muted src="media/high.mp4" alt="Video space"></video>
+        <h1 class="h1"><span class="line1">E-Commerce </span> <br><span  class="line2">Product </span><br><span class="line3">Shipping </span> <br><span class="line4">Data Analysis</span></h1>
+        <h1 class="tabH1">E-Commerce Shipping Data Analysis</h1>
 
         <p class="tag tagsHeader">Tags</p>
         <div class="fixedInfos tags infTab">
@@ -54,12 +55,12 @@
 
         <p class="tag sourceHeader">Source</p>
         <div class="sourceInfo infTab">
-            <a class="sourceLink" target="blank" href="https://www.kaggle.com/datasets/adityaramachandran27/nasa-near-earth-objects-information">Get the raw data from Kaggle</a>
+            <a class="sourceLink" target="blank" href="https://www.kaggle.com/datasets/prachi13/customer-analytics">Get the raw data from Kaggle</a>
         </div>
 
         <p class="tag contextHeader">Context</p>
         <p class="context infTab">
-            Near-Earth objects are asteroids and comets with orbits that bring them to within 120 million miles of the Sun, which means they can circulate through the Earth's orbital neighborhood. This analysis is about foreign object hazard probability.
+            An international e-commerce based company wants to discover key insights from their customer database. They want to use some of the most advanced machine learning techniques to study their customers. The company sells electronic products.
         </p>
 
         <span class="filler" id="dataCleaning"></span>
@@ -70,11 +71,44 @@
 
         <div class="content">
 
-            <p>Since this dataset was pulled from <b><i>Kaggle</i></b> to much cleaning was not necessary. I trimmed few unnecessary data & added a few columns by using the existing data for analysis. I also calculated the respective <b><i>Ranges</i></b> of <b><i>Absolute Magnitude</i></b> provided.</p>
+            <p>Since this dataset was pulled from <b><i>Kaggle</i></b> to much cleaning was not necessary. I trimmed few unnecessary data & added a few columns by using the existing data for analysis. I've also converted string data to <b><i>boolean</i></b> for the column called <b><i>Reached on time</i></b>. This column recorded if on time delivery was a success or not.</p>
 
             <span class="gap"></span>
 
-            <iframe width="100%" height="500px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=54F4D918275C310D%21114&authkey=%21ANiYxlU_6Xv-wUQ&em=2&wdInConfigurator=True&wdInConfigurator=True&edesNext=false&ejss=false"></iframe>
+            <iframe width="100%" height="500px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=54F4D918275C310D%21117&authkey=%21AFtaaacJTAMdO_k&em=2&wdAllowInteractivity=False&ActiveCell='Cleaned%20Data'!A11000&Item='Cleaned%20Data'!Cleaned_data&wdInConfigurator=True&wdInConfigurator=True&edesNext=false&ejss=false"></iframe>
+
+        </div>
+
+        <span class="gapBig" id="eda"></span>
+
+        <h2>Exploratory Data Analysis (EDA):</h2>
+
+        <div class="content">
+
+            <p><b><i>EDA</i></b> was performed in two separate tables to figure out various stuff regarding <b><i>shipments, effects of shipments</i></b> & <i><b>modes used.</i></b> Both the tables are reformed by selecting sets of columns from the cleaned table depending on the analysis. The tables created for <b><i>EDA</i></b> are:</p>
+
+            <span class="gap"></span>
+
+            <div class="gridTwo">
+
+                <div>
+
+                    <p class="sectionGap"><b>1) Weight range & modes of shipment:</b> This table mostly focuses on the relationship between weight and the modes selected for shipping that weight. This was done to see if any pattern was visible on that context and because of that reason <b><i>weight ranges (in kgs)</i></b> was added as a new column. This also came in handy while filtering data.
+                    </p>
+
+                    <br>
+
+                    <ul>
+                        <li>Here <b><i>Cost of products</i></b> are colorized in a descending fashion, the range is darker shades of <b><i>blue (meaning larger values)</i></b> to darker shades of <b><i>red (meaning smaller values)</i></b>.</li>
+                        <li><b><i>Weight in grams</i></b> have bar charts showing visual difference also a <b><i>range column</i></b> is calculated from it.</li>
+                        <li>Click on the <img weight="20px" height="20px" src="media/dropdown.png" alt="dropdown"> icon to <b><i>filter</i></b> data live.</li>
+                    </ul>
+
+                </div>
+
+                <iframe width="100%" height="500px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=54F4D918275C310D%21119&authkey=%21AAlubVn0F2hA4g8&em=2&Item=%27Weight%20and%20distribution%27!weight_distribution&ActiveCell=%27Weight%20and%20distribution%27!A11000&wdHideGridlines=True&wdDownloadButton=True&wdinitialsession=5686f977-fd1e-449e-8a54-3290e90ebdc3&wdrldsc=2&wdrldc=1&wdrldr=InvalidOrTimedOutSession"></iframe>
+
+            </div>
 
         </div>
 

@@ -20,7 +20,7 @@
     justify-content: space-between;
     position: fixed;
     z-index: 200;
-    background-color: rgb(70, 206, 181);
+    background-color: rgb(70, 145, 206);
     color: #fff;
     font-size: 20px;
     padding: 1rem;
@@ -55,7 +55,7 @@
 .h1{
     position: absolute;
     background-color: #000000a5;
-    padding: 100px 1rem 50px 1rem;
+    padding: 100px 1rem 100px 1rem;
     color: #fff;
     top: 0;
     right: 0;
@@ -69,21 +69,25 @@
     display: none;
 }
 
-.nasa{
-    font-size: 180px;
+.line1{
+    font-size: 100px;
 }
 
-.object{
+.line2{
     font-size: 165px;
 }
 
-.hazard{
-    font-size: 65px;
+.line3{
+    font-size: 145px;
+}
+
+.line4{
+    font-size: 95px;
 }
 
 .tag{
     position: absolute;
-    background-color: rgb(70, 206, 181);
+    background-color: rgb(70, 145, 206);
     color: #fff;
     top: 130px;
     padding: 10px 20px;
@@ -164,7 +168,7 @@
 }
 
 .sourceInfo:hover .sourceLink{
-    color: rgb(0, 183, 255);
+    color: rgb(0, 17, 255);
 }
 
 .filler{
@@ -193,6 +197,21 @@
 
 .content{
     line-height: 1.5;
+}
+
+.gridTwo{
+    display: grid;
+    grid-template-columns: 1fr 810px;
+    gap: 2rem;
+}
+
+.sectionGap{
+    padding-top: 3rem;
+}
+
+ul li{
+    list-style-position: inside;
+    list-style-type:disc;
 }
 
 /* footer*/ 
