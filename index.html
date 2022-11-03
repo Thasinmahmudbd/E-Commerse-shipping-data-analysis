@@ -29,8 +29,8 @@
         <div class="link">
             <a href="#dataCleaning">Data Cleaning</a>
             <a href="#eda">EDA</a>
+            <a href="#modes">Modes</a>
             <a href="#dashboard">Dashboards</a>
-            <a href="#dataStory">Data Story</a>
         </div>
     </div>
 
@@ -108,6 +108,62 @@
 
                 <iframe width="100%" height="500px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=54F4D918275C310D%21119&authkey=%21AAlubVn0F2hA4g8&em=2&Item=%27Weight%20and%20distribution%27!weight_distribution&ActiveCell=%27Weight%20and%20distribution%27!A11000&wdHideGridlines=True&wdDownloadButton=True&wdinitialsession=5686f977-fd1e-449e-8a54-3290e90ebdc3&wdrldsc=2&wdrldc=1&wdrldr=InvalidOrTimedOutSession"></iframe>
 
+                <div>
+
+                    <p class="sectionGap"><b>2) Modes of shipment related to customer satisfaction:</b> This table mostly focuses on the relationship between the modes selected for shipping and customer satisfaction after getting shipment. This was done to see if any pattern was visible on that context.
+                    </p>
+
+                    <br>
+
+                    <ul>
+                        <li>Here <b><i>Customer ratings</i></b> are colorized in a descending fashion, the range is <b> red &lt; orange &lt; yellow &lt; light green &lt; green. </b></li>
+                        <li>Click on the <img weight="20px" height="20px" src="media/dropdown.png" alt="dropdown"> icon to <b><i>filter</i></b> data live.</li>
+                    </ul>
+
+                    <p class="sectionGap"><b>3) Customer satisfaction to repeating customers ratio:</b> This table mostly focuses on the ratio between the number of returning customers and satisfaction level of that customer. This is also related to mode of transport which effects the customer satisfaction that determines the return rate. 
+                    </p>
+
+                    <br>
+
+                    <ul>
+                        <li>Here <b><i>Customer ratings</i></b> are colorized in a descending fashion, the range is <b> red &lt; yellow &lt; darker shade of yellow &lt; light green &lt; green. </b></li>
+                        <li>Click on the <img weight="20px" height="20px" src="media/dropdown.png" alt="dropdown"> icon to <b><i>filter</i></b> data live.</li>
+                    </ul>
+
+                </div>
+
+                <iframe width="100%" height="500px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=54F4D918275C310D%21121&authkey=%21ADwU1kasTev3DRo&em=2&ActiveCell='Customer%20satisfaction'!H11001&Item='Customer%20satisfaction'!customer_satisfaction&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&resen=false"></iframe>
+
+            </div>
+
+        </div>
+
+        <span class="gapBig" id="modes"></span>
+
+        <h2>Modes:</h2>
+
+        <p>There are <b>3 types of modes</b> transporting the loads. A <b>visual representation</b> is shown based on the popularity of each individual mode.</p>
+
+        <div class="content">
+
+            <div class="gridTwo">
+
+                <iframe width="100%" height="450" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=54F4D918275C310D%21123&authkey=%21AEzZommZ0oAZqkM&em=2&ActiveCell='Modes%20Dashboard'!I17&Item='Modes%20Dashboard'!Difference_between_shipment_modes&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&resen=false"></iframe>
+
+                <div>
+
+                    <p class="sectionGap">It is clearly shown that mostly ships are used while transporting. Even the combined number of shipments by flights and roads are less than half while comparing with ship transports.
+                    </p>
+
+                    <br>
+
+                    <ul>
+                        <li>Because of this large number, the filtered (filtered customer rating - ascending to descending) version of second EDA table shows that even if ships are mostly used they generate the larger portion of low ratings.</li>
+                        <li>For a better understanding visualization are represented as dashboards.</li>
+                    </ul>
+
+                </div>
+
             </div>
 
         </div>
@@ -118,23 +174,89 @@
 
         <div class="content">
 
-            <p>This is an interactive <b><i>Visualization/Dashboard</i></b> where you can see a report of <i><b>potential hazardous asteroids, Sentry object count</i></b> & also a comparison of both to see the amount of <i><b>sentry objects that are prone to become hazardous.</i></b></p>
+            <p><b>1)</b> This interactive <b><i>Visualization/Dashboard</i></b> explains the relationship between <i><b>product weight & shipment modes.</i></b> </p>
             <br>
             <p>
-                Filtering is possible based on asteroid Orbit classes,
+                Filtering is possible based on level of importance received from customers.
                 <ul>
-                    <li><b>AMO -</b> Stands for Amor. Near-Earth asteroid orbits similar to that of 1221 Amor (a > 1.0 AU; 1.017 AU < q < 1.3 AU).</li>
-                    <li><b>APO -</b> Stands for Apollo. Near-Earth asteroid orbits which cross the Earth's orbit similar to that of 1862 Apollo (a > 1.0 AU; q < 1.017 AU).</li>
-                    <li><b>ATE -</b> Stands for Aten. Near-Earth asteroid orbits similar to that of 2062 Aten (a < 1.0 AU; Q > 0.983 AU).</li>
-                    <li><b>IEO -</b> Stands for Interior Earth Object. An asteroid orbit contained entirely within the orbit of the Earth (Q < 0.983 AU).</li>
+                    <li><b>High</b> importance shipment;</li>
+                    <li><b>Medium</b> importance shipment;</li>
+                    <li><b>Low</b> importance shipment.</li>
                 </ol>
                 <br>
-                Further filtering is possible by cancelling out the possibility of an object being sentry or by only analyzing the hazardous asteroids.
-            </p>   
+                Further filtering is possible by choosing a particular shipment method.
+            </p> 
+
+            <div class="gridThree">
+
+                <div>
+
+                    <p class="sectionGap"><b>a)</b> The bar chart is showing the <b>weight to mode of transport ration in percentage.</b> The table below shows the number of products shipped via different modes of transport & is divide by the weight range of the products. This gives a more descriptive analysis.
+                    </p>
+
+                    <br>
+
+                    <ul>
+                        <li>The bar chart is divide on the weight class.There are a total of <b><i>7 weight classes,</i></b> also <b><i>color quotation</i></b> are specified for mode of transport.</li>
+                        <li>Filtering them will provide interesting results.</li>
+                    </ul>
+
+                    <p class="sectionGap"><b>b)</b> The pie chart is a <b>distribution range</b> that shows the ratio of each weight class.
+                    </p>
+
+                    <br>
+
+                    <ul>
+                        <li> The percentage of distribution will vary according to selected mode.</li>
+                        <li>Filtering them will provide interesting results.</li>
+                    </ul>
+
+                </div>
+
+                <iframe width="100%" height="550px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=54F4D918275C310D%21125&authkey=%21AJAoPhlcinrBPqs&em=2&ActiveCell='Weight%20Dashboard'!I17&Item='Weight%20Dashboard'!Relations_between_product_weight_and_shipment_modes&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&resen=false"></iframe>
+
+            </div>
 
             <span class="gap"></span>
 
-            <iframe width="100%" height="920px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=54F4D918275C310D%21105&authkey=%21AG5CR8QQXKD4LTw&em=2&AllowTyping=True&ActiveCell='Dashboard'!A46&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=false&ejss=false"></iframe>
+            <p><b>2)</b> This interactive <b><i>Visualization/Dashboard</i></b> Talks about various things such as <b><i>Customer rating analysis</i></b> which is based on shipment methods. <b><i>Returning customer analysis & on time delivery ratio.</i></b></p>
+
+            <br>
+
+            <p>Filtering is possible based on <b>Customer gender, amount of calls received from an individual customer regarding an order & modes of transportation.</b></p> 
+
+            <div class="gridFour">
+
+                <iframe class="noOverflow" width="100%" height="720px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=54F4D918275C310D%21127&authkey=%21APGfyrlvFlr_ZTk&em=2&ActiveCell='Rating%20Dashboard'!I17&Item='Rating%20Dashboard'!Customer_rating_analysis_based_on_shipment_method&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&resen=false"></iframe>
+
+                <div>
+
+                    <p class="sectionGap"><b>a)</b> Both the green bar charts are showing the ratio of product sales between an individual mode of transport and the number of ratings received.
+                    </p>
+
+                    <br>
+
+                    <ul>
+                        <li>The bar chart is divide on the ratings received. <b><i>Color notations</i></b> are provided for better understanding.</li>
+                        <li>The smaller green line chart is the same thing but <b><i>shows the percentage</i></b> rather then the whole number.</li>
+                    </ul>
+
+                    <p class="sectionGap"><b>b)</b> The yellow bar chart is a <b>analysis for returning customers.</b> It is based on the ratings provide by the customer after every visit.
+                    </p>
+
+                    <br>
+
+                    <ul>
+                        <li> The percentage of distribution will vary according to selected mode.</li>
+                        <li><b><i>Color notations</i></b> are provided for better understanding. they represent the number of times a customer has visited.</li>
+                    </ul>
+
+                    <p class="sectionGap"><b>c)</b> The other line chart represents <b>on time delivery ratio.</b> This is related to the customer satisfaction, returning customer analysis & the transportation mode selected.
+                    Filtering each chart will provide interesting results.</p>
+
+                </div>
+
+            </div>
 
         </div>
 

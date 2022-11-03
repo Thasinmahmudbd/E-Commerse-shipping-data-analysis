@@ -205,6 +205,18 @@
     gap: 2rem;
 }
 
+.gridThree{
+    display: grid;
+    grid-template-columns: 1fr 920px;
+    gap: 2rem;
+}
+
+.gridFour{
+    display: grid;
+    grid-template-columns: 980px 1fr;
+    gap: 2rem;
+}
+
 .sectionGap{
     padding-top: 3rem;
 }
@@ -212,6 +224,11 @@
 ul li{
     list-style-position: inside;
     list-style-type:disc;
+}
+
+.m_a{
+    width: 60%;
+    margin: auto;
 }
 
 /* footer*/ 
@@ -228,4 +245,8 @@ footer{
 
 .footLink{
     color:rgb(0, 183, 255)
+}
+
+.noOverflow{
+    overflow: hidden;
 }

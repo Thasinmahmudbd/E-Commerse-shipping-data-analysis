@@ -31,7 +31,7 @@
     }
 
     h2{
-        background-color: rgb(70, 206, 181);
+        background-color: rgb(70, 145, 206);
         color: #fff;
         padding: 10px 20px;
     }
@@ -115,7 +115,19 @@
     .gapBig{
         padding: 20px;
     }
-    
+
+    .gridTwo{
+        grid-template-columns: 1fr;
+    }
+
+    .gridThree{
+        grid-template-columns: 1fr;
+    }
+
+    .gridFour{
+        grid-template-columns: 1fr;
+    }
+
     /* footer*/ 
     
     footer{
